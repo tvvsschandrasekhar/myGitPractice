@@ -31,6 +31,7 @@ payload map ( payload01 , indexOfPayload01 ) -> {
 			</ee:message>
 		</ee:transform>
 		<logger level="INFO" doc:name="Logger" doc:id="a2a46960-c442-48c4-ba0a-ca493d920e1d" message="#[payload]"/>
+		<logger level="INFO" doc:name="Logger" doc:id="ead34eaa-b3d7-46c8-a313-c7cdb3f00ce6" message="new logger added"/>
 	</flow>
 	<flow name="getUnitedFlights" doc:id="78ce563e-a47b-4ff8-a621-26b984d035f2" >
 		<http:request method="GET" doc:name="Request" doc:id="0c4ea954-4520-4f0d-90c9-80b078a2b519" config-ref="HTTP_Request_configuration" path="/united/flights/{dest}">
